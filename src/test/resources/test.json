@@ -1,0 +1,17 @@
+{
+  "name": "Pikachu",
+  "weight": 6,
+  "talents": "paralysis",
+  "view": "mouse",
+  "evolution":
+  [
+    {
+      "stage": "the first",
+      "title": "Raichu"
+    },
+    {
+      "stage": "second",
+      "title": "Sandshru"
+    }
+  ]
+}
