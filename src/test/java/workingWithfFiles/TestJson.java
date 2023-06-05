@@ -1,7 +1,7 @@
 package workingWithfFiles;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import models.testJsonPokemon;
+import models.TestJsonPokemon;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class testJson {
-    public ClassLoader cl = testJson.class.getClassLoader();
+public class TestJson {
+    public ClassLoader cl = TestJson.class.getClassLoader();
 
     @DisplayName("Чтение и проверка содержимого файла json")
     @Test
@@ -18,7 +18,7 @@ public class testJson {
         ObjectMapper objectMapper = new ObjectMapper();
         try (InputStream is = cl.getResourceAsStream("test.json");
              InputStreamReader isr = new InputStreamReader(is)) {
-            testJsonPokemon testJson = objectMapper.readValue(isr, testJsonPokemon.class);
+            TestJsonPokemon testJson = objectMapper.readValue(isr, TestJsonPokemon.class);
             Assertions.assertEquals("Pikachu", testJson.getName());
             Assertions.assertEquals(6, testJson.getWeight());
             Assertions.assertEquals("paralysis", testJson.getTalents());

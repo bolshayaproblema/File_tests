@@ -2,14 +2,14 @@ package models;
 
 import java.util.List;
 
-public class testJsonPokemon {
+public class TestJsonPokemon {
     private String name;
     private  Integer weight;
     private  String talents;
     private  String view;
-    private List<pokemonEvolution> evolution;
+    private List<PokemonEvolution> evolution;
 
-    public List<pokemonEvolution> getEvolution() {
+    public List<PokemonEvolution> getEvolution() {
         return evolution;
     }
     public String getName(){
