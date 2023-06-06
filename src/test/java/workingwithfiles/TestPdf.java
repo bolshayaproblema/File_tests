@@ -1,4 +1,4 @@
-package workingWithfFiles;
+package workingwithfiles;
 
 import com.codeborne.pdftest.PDF;
 import org.junit.jupiter.api.Assertions;

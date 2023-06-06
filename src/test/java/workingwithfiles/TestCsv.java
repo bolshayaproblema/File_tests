@@ -1,4 +1,4 @@
-package workingWithfFiles;
+package workingwithfiles;
 
 import com.opencsv.CSVReader;
 import org.junit.jupiter.api.Assertions;
